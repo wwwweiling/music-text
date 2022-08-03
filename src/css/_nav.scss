@@ -33,6 +33,15 @@
      }
      .nav_menu{
         display:none;
+        .nav_menu_area ol {margin-top: 20px;}
+
+      
+        .nav_menu_area ol li{
+          background-color: rgb(243, 243, 243);
+          font-size: 1vw;
+          line-height: 2vw;
+          padding: 0.5vw 6.5vw 0.5vw 1vw;
+          margin-left: -1vw;}
            
      }
    }
@@ -50,23 +59,19 @@
       }   
 
     .nav_left li:hover .nav_menu{
-      display:block;
-      .nav_menu_area ol li{
-      padding: 1vw 5vw 1vw 1vw;
-      background-color: rgb(243, 243, 243);
-      font-size: 1vw;}
+      display:block;}
 
-}
+
     .nav_menu_area ol li:hover {
       background-color: rgb(243, 243, 243);
-      opacity: 0.9;
+      opacity: 0.95;
 
     }
     
     
     .nav_menu_area{
       position: absolute;
-      top: 2.5vw;
+      // top: 3vw;
 
     a{
       color: black;
