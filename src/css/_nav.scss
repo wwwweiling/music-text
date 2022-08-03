@@ -32,8 +32,9 @@
 
      }
      .nav_menu{
-        display:none;
-        .nav_menu_area ol {margin-top: 20px;}
+        // display:none;
+        .nav_menu_area ol {
+          margin-top: 20px;}
 
       
         .nav_menu_area ol li{
@@ -190,11 +191,16 @@
       padding: 0;
       .nav_left{
         width: 100%;
-        background-color: #fff;
+        // background-color: #fff;
         >li{
           display: block;
         
         }
+        
+        .nav_menu{
+          display:none;}
+        
+
       }
       .nav_mobile{
         display: block; //in line-block變成block
@@ -202,6 +208,15 @@
         right: 20px;
         top: 20px;
       }
+
+
+
+      .nav_left li>a{
+        color: #000;
+        
+  
+      }
+
     }
     #check{ //漢堡選單相關RWD+動畫 
       //未點擊前先隱藏
@@ -232,6 +247,8 @@
       }
       .nav_right ul{position: absolute;
         left: 5vw;}
+
+
   }
   
   
