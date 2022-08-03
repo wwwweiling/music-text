@@ -15,10 +15,10 @@
      background-repeat: no-repeat;
    }
    .nav_left{
-
-      position: absolute;
-      left: 350px;
-      top: 34px;
+      //有問題-多了此行使得media漢堡排跑版//
+      position: relative;
+      left: 10px;
+      top: 8px;
 
      >li{
        display: inline-block;
@@ -32,7 +32,7 @@
 
      }
      .nav_menu{
-        // display:none;
+        display:none;
         .nav_menu_area ol {
           margin-top: 20px;}
 
@@ -191,9 +191,14 @@
       padding: 0;
       .nav_left{
         width: 100%;
-        // background-color: #fff;
+        background-color: #fff;
+        position: relative;
+        left: 0;
+        top: 0;
         >li{
           display: block;
+          padding: 4vw 3vw;
+          border-bottom: 1px solid gray;
         
         }
         
@@ -207,14 +212,13 @@
         position: absolute;
         right: 20px;
         top: 20px;
-      }
+        padding: 15px 10px;      }
 
 
 
       .nav_left li>a{
         color: #000;
         
-  
       }
 
     }
@@ -245,10 +249,23 @@
             }
         }
       }
-      .nav_right ul{position: absolute;
-        left: 5vw;}
 
+      .nav_left .li_hover:hover {
+        background-color:#fff !important;
+        border-radius: 5px;
+      }   
+      .nav_right{
+        position: absolute;
+        right: 70px;
+        top: 32px;
+        
+      }
 
+      #h_search
+      {position: absolute;
+      right: 0;
+      top: 32px;}
   }
   
   
+
