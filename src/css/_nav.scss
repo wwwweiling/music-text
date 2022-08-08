@@ -195,6 +195,8 @@
         position: relative;
         left: 0;
         top: 0;
+        height: auto;
+      
         >li{
           display: block;
           padding: 4vw 3vw;
@@ -252,7 +254,6 @@
 
       .nav_left .li_hover:hover {
         background-color:#fff !important;
-        border-radius: 5px;
       }   
       .nav_right{
         position: absolute;
