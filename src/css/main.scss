@@ -3,6 +3,7 @@
 @import "_recet";
 @import "_nav";
 @import"_form";
+@import"_footer";
 
 html {
     -webkit-box-sizing: border-box;
@@ -524,11 +525,10 @@ html {
 
 span{
   display: inline-block;
-  float: right;
   position: relative;
-  top: 38px;
+  top: 0px;
   font-size: 15px;
-  right: 20px;
+  right: 0;
   color:rgb(165, 164, 164);
 }
 
@@ -880,15 +880,15 @@ span{
   }
 
   .all_news{
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 700;
     color:$color1;
     text-align: right;
     position: relative;
     padding-top: 20px;
     margin: 30px 0;
     margin-right: 60px;
-    letter-spacing: 0.097rem;
+    letter-spacing: 0.06rem;
 
     span{
       display: inline-block;
@@ -919,12 +919,12 @@ span{
     content: "";
     display: inline-block;
     background-image: url(../img/new_bottom.png);
-    width:100%;
+    width:431px;
     background-repeat: no-repeat;
     height: 100px;
     position: absolute;
-    right: -90px;
-    background-position: 100%;
+    right: -60px;
+    background-position: 0 center;
     z-index: -1;
     bottom: -40px;
     
@@ -972,6 +972,9 @@ span{
         padding: 0 10px 80px 20px;
       }
 
+      .all_news::before{
+        width:0;
+      }
 
   //   .news2_img{
   //     width:100%;
