@@ -205,12 +205,13 @@ html {
     padding: 30px 15px;
     background-color: $color1;
     justify-content: space-between;
+    gap: 20px;
   }
 
   .item_left,.item_right{
-    width:48%;
+    // width:48%;
     border-radius: 15px;
-  
+    flex:1;
   }
 
   .item_left{
@@ -428,6 +429,7 @@ html {
   display: flex;
   padding: 0 15px;
   width: 100%;
+  gap:20px;
 
 }
 
