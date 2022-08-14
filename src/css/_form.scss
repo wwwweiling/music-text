@@ -13,15 +13,17 @@
     align-items: center;
     // position: relative;
 
-
+    .form_inner{
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
 
     .form_top{
-
-        width: 1000px;
+        width: 100%; 
         padding-top: 20px ;
         position: relative;
-
-
         .contact{
             color:$color1;
             font-size:30px;
@@ -37,18 +39,24 @@
             position: relative;
     
         }
-
-        div:nth-child(2){
+        // 建議：選擇器不宜直接寫 div，因為 div 太通用了，所以加個 class 比較好。
+        .form_top_inner{
+            display:flex;
+            padding: 20px 0;
+        }
+        .form_top_inner>p{
             font-size: 15px;
             color:$color4;
-            padding: 20px 0;        }
+            margin-right: auto;
+          }
     
-        div>span{
-            display: inline-block;
+        .form_top_inner>span{
+            // 建議：inline-block 和 absolute 通常不會一起出現
+            // display: inline-block;
             font-size: 15px;
             color:$color1;
-            position: absolute;
-            right: 0;
+            // position: absolute;
+            // right: 0;
             // position: absolute;
         }
 
@@ -151,30 +159,15 @@
     @media (max-width:992px){
 
         #form_wrap{
-            // width:100%;
-            .form_top{
-                width:780px;
-                max-width:100%;
-                margin: 0 15px;
-                padding-left: 15px;
-
-                div:nth-child(2){
-                    padding: 30px 0;        }
-            
-                div>span{
-                    bottom: 10px;
-                    right: 10px;
-                    // position: absolute;
-                }
-
-            }
-
-            .from_in{
-
+            // width:100%;  
+            .form_top_inner{
                 flex-direction: column;
-                margin: 0 15px;
-
-
+                >p{
+                    margin-bottom: 10px;
+                }
+            }
+            .from_in{
+                flex-direction: column;
             }
 
             .left{
@@ -194,8 +187,6 @@
             }
 
         .from_bottom{
-            margin: 0 15px;
-
             .btn{
                 top: 30px;
             }

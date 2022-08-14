@@ -1,35 +1,39 @@
 <div id="form_wrap">
-    <div class="form_top">
-        <div class="contact">聯絡功學社</div>
-        <div>歡迎來到功學社，若您有任何建議與諮詢，歡迎利用下方表單，我們將由專人儘快為您服務，謝謝。
-        <span>*為必填項目</span>
+    <div class="form_inner">
+        <div class="form_top">
+            <div class="contact">聯絡功學社</div>
+            <div class="form_top_inner">
+                <p>歡迎來到功學社，若您有任何建議與諮詢，歡迎利用下方表單，我們將由專人儘快為您服務，謝謝。</p>
+                <span>*為必填項目</span>
+            </div>
         </div>
+        <form class="from_in_wrap" action="" method="">
+            <div class="from_in">
+            <div class="left">
+                <div class="form_left"><input id="name" type="text" name="name" placeholder="姓名"></div>
+                <div class="form_left"><input id="address" type="text" name="address" placeholder="地址"></div>
+                <div class="form_left"><input id="phone" type="text" name="phone" placeholder="電話"></div>
+                <div class="form_left"><input id="mail" type="text" name="mail" placeholder="信箱"></div>
+            </div>
+            <div class="right">
+                <select name="question_option" id="question_option">
+                <option value="">我要詢問</option>
+                <option value="">回估鋼琴(非電子類)</option>
+                <option value="">樂器</option>
+                <option value="">管樂器維修</option>
+                <option value="">其他</option>
+                </select>
+                <div class="form_right right_question"><input id="subject" type="text" name="subject" placeholder="主旨"></div>
+                <div class="form_right">
+                    <input id="question" type="text" name="question" placeholder="問題描述"></div>
+                <div class="form_right"><input id="subject2" type="text" name="subject2" placeholder="備註"></div>
+            </div>   
+            </div> 
+            <div class="from_bottom">
+                <input type="checkbox" id="check_ans" name="check_ans" value="">
+                <label>“本人同意所提供給功學社的資訊，將受到功學社集團與網站 網站使用説明所規範，本人已閱讀並了解上述條款。”</label>
+                <button class="btn" type="button">確認送出</button>
+            </div>
+        </form>
     </div>
-    <form class="from_in_wrap" action="" method="">
-        <div class="from_in">
-        <div class="left">
-            <div class="form_left"><input id="name" type="text" name="name" placeholder="姓名"></div>
-            <div class="form_left"><input id="address" type="text" name="address" placeholder="地址"></div>
-            <div class="form_left"><input id="phone" type="text" name="phone" placeholder="電話"></div>
-            <div class="form_left"><input id="mail" type="text" name="mail" placeholder="信箱"></div>
-        </div>
-        <div class="right">
-            <select name="question_option" id="question_option">
-            <option value="">我要詢問</option>
-            <option value="">回估鋼琴(非電子類)</option>
-            <option value="">樂器</option>
-            <option value="">管樂器維修</option>
-            <option value="">其他</option>
-            </select>
-            <div class="form_right right_question"><input id="subject" type="text" name="subject" placeholder="主旨"></div>
-            <div class="form_right"><input id="question" type="text" name="question" placeholder="問題描述"></div>
-            <div class="form_right"><input id="subject2" type="text" name="subject2" placeholder="備註"></div>
-        </div>   
-        </div> 
-        <div class="from_bottom">
-            <input type="checkbox" id="check_ans" name="check_ans" value="">
-            <label>“本人同意所提供給功學社的資訊，將受到功學社集團與網站 網站使用説明所規範，本人已閱讀並了解上述條款。”</label>
-            <button class="btn" type="button">確認送出</button>
-        </div>
-    </form>
 </div>      
