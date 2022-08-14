@@ -208,12 +208,12 @@ html {
     padding: 30px 15px;
     background-color: $color1;
     justify-content: space-between;
+    gap: 20px;
   }
 
   .item_left,.item_right{
-    width:48%;
     border-radius: 15px;
-  
+    flex: 1;
   }
 
   .item_left{
@@ -432,6 +432,7 @@ padding: 0 15px;
 
 .news_wrap_item{
   display: flex;
+  gap:20px;
   padding: 0;
   width: 100%;
 
@@ -442,7 +443,6 @@ padding: 0 15px;
   box-shadow: 3px 5px 3px 3px rgba(211,211,211,0.8);
   position: relative;
   padding-bottom: 20px;
-  margin: 0 15px;
   &:first-child{
     margin-left: 0;
   }
