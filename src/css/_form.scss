@@ -152,6 +152,8 @@
 
         #form_wrap{
             // width:100%;
+            position: relative;
+            z-index: -1;
             .form_top{
                 width:780px;
                 max-width:100%;
@@ -205,3 +207,27 @@
 
 
     }
+
+    .return{
+        width: 72px;
+        height: 72px;
+        background-color: $color1;
+        border-radius: 20px;
+        position: fixed;
+        right: 30px;
+        bottom: 20px;
+        z-index: 99;
+
+        .return_top>svg{
+            width:60px;
+            height: 60px;
+            position: fixed;
+            right: 35px;
+            bottom: 25px;
+            color:$color4;
+            }         
+        }
+    
+    .return:hover{
+        opacity: 0.75;
+    }    
