@@ -16,273 +16,46 @@ html {
 
 //header
 
-#header{ //如果沒有寫height:100vh其 header外層要+width:100%
+
+body{
+  
+}
+header{
     width:100%;
     height:100vh;
-    background-image:url(https://img.youtube.com/vi/tIA_vrBDC1g/maxresdefault.jpg);
-    background-position: center;
+    background-color: rgb(226, 92, 92);
+    background-image: url(https://img.youtube.com/vi/tIA_vrBDC1g/maxresdefault.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    position: relative;//給遮罩做定位
-    z-index:1;
-    color:white;
-    //遮罩
+    position: relative;
+    z-index: 1;
     &::before{
-        content: "";
-        background: linear-gradient(0deg,transparent 0,#000 100%);//漸層.線性
-        width:100%;
-        height:50%;
-        opacity: 0.55;
-        //寬高會滿版
-        display: block;
-        position:absolute;
-        //before.after為行內元素要改成塊及元素
-        //定位absolute跳出結構
-        z-index:-1;
-         //父層設z-index:1 子層設z-index:-1才可以使背景覆蓋上遮罩且文字不被遮住
-        }
-
+      content: "";
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, black 100%);
+      width:100%;
+      height:50%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      opacity: 0.55;
+    }
     &::after{
-        content: "";
-        background-color: rgba(0,0,0,.3);
+        content:"";
+        background-color: rgba(0, 0, 0, 0.3);
         width:100%;
         height:100%;
         display: block;
-        position:absolute;
-        top:0;
-        left:0;
-        z-index:-2;
-        //z-index不可設0，不然會使文字無法拖曳
-    }    
-
-
-    .header-wrap{
-
-      .header_bottom{
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 796.63 239.98'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23d01a48;opacity:.9%7D%3C/style%3E%3C/defs%3E%3Ctitle%3E1%3C/title%3E%3Cpath class='cls-1' d='M476.82 205c-57-11-94.63-45-190.63-101C58.57-28.78-84.93-48-319.82-28.54V205h796.64z' transform='translate%28319.82 34.98%29'/%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-position: left bottom;
-        width:100%;
-        height: 240px;
         position: absolute;
-        bottom: 0;
-        padding-left: 30px;
-        
-        .header_main{
-          font-size: 40px;
-          letter-spacing: 2px;
-          position: relative;
-          bottom: 90px;
-
-          a.player{
-            display: inline-block;
-            background-image: url(../img/play.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            width:60px;
-            height: 60px;
-            position: relative;
-            top: 20px;
-            left: -10px;
-            max-width: 100%;
-          }
-        }
-
-        .header_p{
-          width: 25%;
-          line-height: 27px;
-          font-size: 15px;
-          /* position: absolute; */
-          letter-spacing: 0.1rem;
-          margin-top: -20px;
-
-        }
-
-      .buttom_about{
-        margin-top: 20px;}
-
-      a.about{
-        display: block;
-        text-decoration: none;
-        color:$color4;
-        // margin-top: 30px;
-        border: 1px solid;
-        border-radius: 5px;
-        text-align: center;
-        width: 110px;
-        line-height: 34px;
-
-       &:hover{
-        background-color:$color4 ;
-        color: $color1;
-
-       } 
+        top: 0;
+        left: 0;
+        z-index: -2;
     }
-      
-    
-      }
+}
 
-
-    }
-
-
-
-
-     }
-
-
-     
-    ::selection{
-        color: $color1;
-        background-color: $color2;
-    }
-
-    @media (max-width:992px){
-
-      .header_bottom{
-      background-size: cover;
-      padding-left: 15px !important;
-      padding-top: 2vw;
-      z-index: -1;
-
-      .header_main{
-        font-size: 6vw !important;}
-      .header_p{
-        width: 63% !important;
-        }
-
-      a{
-        position: absolute;
-        left: 15px;} 
-
-      }
-  
-
-    }
-
- //main- card_wrap   
-#card_wrap{
-
-  margin-top:80px;
-  margin-bottom: 70px;
-  //差灰色背景
-
-  .card{
-    width:100%;
-
-    .card_serive{
-      text-align:right;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 100'%3E%3Cstyle%3E.st0%7Bfill:%23d01a48%7D%3C/style%3E%3Cpath class='st0' d='M0 100c35.1 0 76.8-5.8 123.9-22.2C221.4 43.7 292.1 0 377 0c51.3 0 74.6 22.9 103 22.9V100H0z'/%3E%3C/svg%3E");
-      height: 100px;
-      background-repeat: no-repeat;
-      background-position: 100%;
-      position:relative;    
-      top:1px}
-
-    .serive{
-      font-size:2rem;
-      position: absolute;
-      right: 40px;
-      bottom: 10px;
-      background-color: $color1;
-      padding-top:45px;
-      color:aliceblue;
-      font-weight: bold;
-    }
-
-
-
-  }
-
-  .card_item{
-    display: flex;
-    padding: 20px;
-    background-color: $color1;
-    justify-content: space-between;
-  }
-
-  .item_left,.item_right{
-    width:48%;
-    border-radius: 15px;
-  
-  }
-
-  .item_left{
-    background-color: $color2;
-  }
-  .item_right{
-    background-color: $color3;
-
-  }
-
-  .item_zoom{
-    width:100%;
-    height:330px;
-  }
-
-  .image_left{
-    background-image: url(../img/index/bg-33.png);
-    background-position: 50%;
-    background-size: cover;
-    width:100%;
-    height: 100%;
-    display: block;
-    border-radius: 15px 15px 0 0;
-  
-  }
-
-  .image_right{
-    background-image: url(../img/index/bg-32.png);
-    background-position: 50%;
-    background-size: cover;
-    width:100%;
-    height: 100%;
-    display: block;
-    border-radius: 15px 15px 0 0;
-
-  }
-
-  .two_wrap{
-    padding: 20px 0 20px 0;
-  }
-
-  .two_icon{
-    float: left;
-    width:150px;
-    height:150px;
-    
-  }
-  .image_left_icon{
-    background-image: url(../img/index/obj1.png);
-
-
-  }
-  .image_right_icon{
-    background-image:url(../img/index/obj2.png)
-
-  }  
-
-  .two_text{
-    margin:20px 0 30px 0;
-    padding-right: 30px;
-  }
-
-  .main_name{
-    color: $color4;
-    text-decoration: none;
-    font-size:30px;
-    font-weight:bold;
-    letter-spacing: 0.3rem;
-  }
-
-  .text_name{
-    color:$color4;
-    font-size:0.94rem;    
-    line-height: 27px;
-    overflow: hidden;
-    padding-top: 10px;
-
-  }
-
-}    
+::selection{
+    background-color: #D01A48;
+    color: #ffffff;
+}
