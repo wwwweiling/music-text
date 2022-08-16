@@ -1,3 +1,4 @@
+@import "_var";
 .service_row{ //並排的兩個service-card
     display: flex;
     gap: 20px;
@@ -16,6 +17,7 @@
         background-position: 50%;
         background-size: cover;
         cursor: pointer;
+
       }
     }
     .service_text{
@@ -24,12 +26,20 @@
       padding-top: 12px;
       position: relative;
       overflow: hidden;
+      &.bg-one{
+        background-color: $color2;
+      }
+      &.bg-two{
+        background-color: $color3;
+      }
       .service_bg{
         width: 150px;
         height: 150px;
         position: absolute;
         margin-left: 12px;
         background-repeat: no-repeat;
+
+       
       }
       .service_parent{
         margin-left: 182px;

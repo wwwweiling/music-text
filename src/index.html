@@ -31,8 +31,8 @@
         </h2>
       <div class="service_row_parent">
         <div class="service_row container">
-          @@include("include/service_col.html")
-          @@include("include/service_col.html")
+          @@include("include/service_col.html",{"bg-color":"bg-one"})
+          @@include("include/service_col.html",{"bg-color":"bg-two"})
         </div>
       </div>
       </div>
@@ -40,14 +40,11 @@
         <div class="container">
           <h2><span>最新消息</span></h2>
           <div class="news_row">
-            @@include("include/news_col.html")
-            @@include("include/news_col.html")
-            @@include("include/news_col.html")
-            @@include("include/news_col.html")
-            @@include("include/news_col.html")
-            @@include("include/news_col.html")
-            @@include("include/news_col.html")
-            @@include("include/news_col.html")
+            <!-- @@include_once options - type: JSON -->
+              @@for (var i = 0; i < 10; i++) {
+                 @@include("include/news_col.html", {
+                "ima":"https://picsum.photos/600/200?random=`+i+` ","name" : "薩克斯風分享會～教會朋友不孤單！"})}
+              
           </div>
           <div class="news_block">
             
