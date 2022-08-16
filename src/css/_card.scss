@@ -1,0 +1,247 @@
+//main- card_wrap 服務項目   
+#card_wrap{
+    margin-top:80px;
+    margin-bottom: 70px;
+    //差灰色背景
+      .card_serive{
+        text-align:right;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 100'%3E%3Cstyle%3E.st0%7Bfill:%23d01a48%7D%3C/style%3E%3Cpath class='st0' d='M0 100c35.1 0 76.8-5.8 123.9-22.2C221.4 43.7 292.1 0 377 0c51.3 0 74.6 22.9 103 22.9V100H0z'/%3E%3C/svg%3E");
+        height: 100px;
+        background-repeat: no-repeat;
+        background-position: 100%;
+        position:relative;    
+        top:1px;
+        right:30px}
+      .serive{
+        font-size: 1.8rem;
+        letter-spacing: 0.3rem;
+        position: absolute;
+        right: -30px;
+        bottom: 0px;
+        background-color: $color1;
+        padding-top: 48px;
+        padding-right: 30px;
+        color:aliceblue;
+        font-weight: bold;
+      }
+    }
+  
+    .card{  
+      width: 100%;
+      background: #cf1a47;
+      padding: 20px 0;
+      .card_item{
+        //.card_item為我的container:都要包
+        // .container{
+        //   width: 100%;
+        //   max-width: 1280px; (可調整/看設計師給的)
+        //   margin: 0 auto;      
+        width: 100%;
+        max-width:1280px;
+        margin: 0 auto;
+        padding: 0 5px;
+        display: flex;
+        gap:20px;
+  
+  
+      }
+    // .card_item{
+    //   display: flex;
+    //   padding: 30px 15px;
+    //   background-color: $color1;
+    //   justify-content: space-between;
+    //   gap: 20px;
+    // }
+  
+    .item_left,.item_right{
+      // width:48%;
+      border-radius: 15px;
+      flex:1;
+  
+    }
+  
+    .item_left{
+      background-color: $color2;
+      position: relative;
+    }
+    .item_right{
+      background-color: $color3;
+      position: relative;
+  
+    }
+  
+    .item_zoom{
+      width:100%;
+      height:330px;
+      overflow: hidden;
+      border-radius: 15px 15px 0 0;
+  
+  
+  
+  
+    }
+  
+    .image_left{
+      background-image: url(../img/index/bg-33.png);
+      background-position: 50%;
+      background-size: cover;
+      width:100%;
+      height: 100%;
+      display: block;
+    
+    }
+  
+    .image_right{
+      background-image: url(../img/index/bg-32.png);
+      background-position: 50%;
+      background-size: cover;
+      width:100%;
+      height: 100%;
+      display: block;
+  
+    }
+  
+    .two_image:hover{
+      transform: scale(1.1);
+      transition: transform .5s;
+      position: relative;
+  
+    }
+  
+    .two_image:hover::after{
+      content: "";
+      background-color: rgba(0,0,0,.1);
+      width:100%;
+      height:100%;
+      display: block;
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:2;
+    }
+  
+    .two_wrap{
+      padding: 20px 0 20px 0;
+    }
+  
+    .two_icon{
+      float: left;
+      width:150px;
+      height:150px;
+      margin:0 20px;
+      
+    }
+    .image_left_icon{
+      background-image: url(../img/index/obj1.png);
+  
+  
+    }
+    .image_right_icon{
+      background-image:url(../img/index/obj2.png)
+  
+    }  
+  
+    .two_text{
+      margin:20px 0 30px 0;
+      padding-right: 30px;
+    }
+  
+    .main_name{
+      color: $color4;
+      text-decoration: none;
+      font-size:30px;
+      font-weight:bold;
+      letter-spacing: 0.3rem;
+    }
+  
+    .text_name{
+      color:$color4;
+      font-size:0.94rem;    
+      line-height: 27px;
+      overflow: hidden;
+      padding-top: 10px;
+  
+    }
+  
+    //before z-index沒有反應
+    // .two_more{
+    //   text-decoration: none;
+    //   display: block;
+  
+    //   text-align: right;
+    //   z-index:2;
+    // }
+  
+    // .two_more::before{
+    //   content: "";
+    //   background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 219.7 56.7' style='enable-background:new 0 0 219.7 56.7;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23ffffff;%7D%0A%3C/style%3E%3Cpath class='st0' d='M0,56.7h219.7V0.1C134.2-1.5,68.3,22.9,0,56.7z'/%3E%3C/svg%3E%0A");
+    //   display: block;
+    //   width: 231px;
+    //   height: 61px;
+    //   background-repeat: no-repeat;
+    //   position: absolute;
+    //   bottom: 0;
+    //   right: 0;
+    //   z-index: 3;
+  
+    // }
+  
+    .two_more{
+      background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 219.7 56.7' style='enable-background:new 0 0 219.7 56.7;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23ffffff;%7D%0A%3C/style%3E%3Cpath class='st0' d='M0,56.7h219.7V0.1C134.2-1.5,68.3,22.9,0,56.7z'/%3E%3C/svg%3E%0A");
+      display: block;
+      width: 231px;
+      height: 61px;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      text-align: right;
+      text-decoration: none;
+      padding-top: 30px;
+      padding-right: 10px;
+      border-radius: 0 0 15px 0;
+      font-weight: 700;
+      font-size: 0.95rem;
+  
+    }
+  
+    .two_more:hover span{
+      display: inline-block;
+      position: relative;
+      left: 10px;
+    }
+    //如何hover過去圖片
+  
+    // .two_more:hover .two_image{
+  
+    // }
+  
+    .two_more_left{
+      color:$color2;
+    }
+  
+    .two_more_right{
+      color:$color3;
+    }
+  
+  }    
+  
+  //media-card
+  @media (max-width:992px){
+  
+    .card_item{
+    flex-direction: column;}
+    
+    .item_left{
+      width:100% !important;
+      margin-bottom: 20px;
+    }
+  
+    .item_right{
+      width:100% !important;
+    }
+  
+  
+  }
+  
