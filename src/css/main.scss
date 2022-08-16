@@ -133,8 +133,6 @@ html {
 
      }
 
-
-     
     ::selection{
         color: $color1;
         background-color: $color2;
@@ -165,14 +163,9 @@ html {
 
  //main- card_wrap 服務項目   
 #card_wrap{
-
   margin-top:80px;
   margin-bottom: 70px;
   //差灰色背景
-
-  .card{
-    width:100%;
-
     .card_serive{
       text-align:right;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 100'%3E%3Cstyle%3E.st0%7Bfill:%23d01a48%7D%3C/style%3E%3Cpath class='st0' d='M0 100c35.1 0 76.8-5.8 123.9-22.2C221.4 43.7 292.1 0 377 0c51.3 0 74.6 22.9 103 22.9V100H0z'/%3E%3C/svg%3E");
@@ -182,7 +175,6 @@ html {
       position:relative;    
       top:1px;
       right:30px}
-
     .serive{
       font-size: 1.8rem;
       letter-spacing: 0.3rem;
@@ -195,23 +187,40 @@ html {
       color:aliceblue;
       font-weight: bold;
     }
-
-
-
   }
 
-  .card_item{
-    display: flex;
-    padding: 30px 15px;
-    background-color: $color1;
-    justify-content: space-between;
-    gap: 20px;
-  }
+  .card{  
+    width: 100%;
+    background: #cf1a47;
+    padding: 20px 0;
+    .card_item{
+      //.card_item為我的container:都要包
+      // .container{
+      //   width: 100%;
+      //   max-width: 1280px; (可調整/看設計師給的)
+      //   margin: 0 auto;      
+      width: 100%;
+      max-width:1280px;
+      margin: 0 auto;
+      padding: 0 5px;
+      display: flex;
+      gap:20px;
+
+
+    }
+  // .card_item{
+  //   display: flex;
+  //   padding: 30px 15px;
+  //   background-color: $color1;
+  //   justify-content: space-between;
+  //   gap: 20px;
+  // }
 
   .item_left,.item_right{
     // width:48%;
     border-radius: 15px;
     flex:1;
+
   }
 
   .item_left{
@@ -400,8 +409,11 @@ html {
 }
 
 //main- -最新消息
-
 #news_wrap{
+  width: 100%;
+max-width:1280px;
+margin: 0 auto;
+padding: 0 15px;
 
 .news{
   font-size: 1.8rem;
@@ -409,7 +421,7 @@ html {
   color:aliceblue;
   font-weight: bold;
   position: relative;
-  margin-left: 30px;
+  // margin-left: 30px;
   padding: 0 0 10px 15px;
 }
 .news::after{
@@ -417,32 +429,39 @@ html {
   display: inline-block;
   background-image: url(../img/bg3.svg);
   width:100%;
+  height:75px;
   background-repeat: no-repeat;
-  padding: 40px 50%;
+  // padding: 40px 50%;
   position: absolute;
   left: 0;
-  bottom: -4px;
+  bottom: 0px;
   z-index: -1;
 }
-
 .news_wrap_item{
   display: flex;
-  padding: 0 15px;
+  // padding: 0 15px;
+  padding:0;
   width: 100%;
-  gap:20px;
-
+  // gap:20px;
 }
-
-
-
 .news_item{
   border-radius: 15px;
-  width: 33.3%;
-  margin: 0 1%;
-  overflow:hidden;
-  min-height: 482px;
+  // width: 33.3%;
+  // margin: 0 1%;
+  // overflow:hidden;
+  // min-height: 482px;
   box-shadow: 3px 5px 3px 3px rgba(211,211,211,0.8);
   position: relative;
+  flex: 1;
+  padding-bottom: 20px;
+  margin: 0 15px;
+  &:first-child{
+    margin-left: 0;
+  }
+  &:last-child{
+    margin-right: 0;
+  }
+
 }
 
 .news_img{
@@ -563,19 +582,27 @@ span{
 
 @media (max-width:992px){
 
-  .news_wrap_item{
-    flex-direction: column;}
+  // .news_wrap_item{
+  //   flex-direction: column;}
 
-  .news_item{
-    width: 100% !important;
-    margin-bottom: 20px !important;
+  // .news_item{
+  //   width: 100% !important;
+  //   margin-bottom: 20px !important;
 
-  }  
+  // }  
 
-  .news{
-    margin-left: 20px;
+  // .news{
+  //   margin-left: 20px;
+  // }
+  #news_wrap {
+    .news_wrap_item{
+      flex-direction: column;}
+
+    .news_item{
+      margin: 0;
+      margin-bottom: 20px;
+    }  
   }
-
 }
 
 
