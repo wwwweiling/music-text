@@ -1,33 +1,10 @@
-@import "_var";
-@import "_normalize";
-@import "_recet";
-@import "_nav";
 @import"_form";
-@import"_footer";
 @import"_header";
 @import"_card";
 @import"_news";
 @import"_news2";
+@import "_var";
 
 
-html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
-  }
-
-//header
-
-
-
-    ::selection{
-        color: $color1;
-        background-color: $color2;
-    }
 
 

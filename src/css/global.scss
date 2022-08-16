@@ -1,0 +1,29 @@
+@import "_var";
+@import "_normalize";
+@import "_recet";
+@import "_nav";
+@import"_footer";
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+
+    ::selection{
+        color: $color1;
+        background-color: $color2;
+    }
+    // 撰寫共用container:都要包
+    // .container{
+    //   width: 100%;
+    //   max-width: 1280px; (可調整/看設計師給的)
+    //   margin: 0 auto;
+    // }
+    // 撰寫共用container
+    

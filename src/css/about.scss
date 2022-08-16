@@ -1,3 +1,39 @@
 @import "_var";
-@import "_normalize";
-@import "_recet";
+@import"_about_main";
+
+#about_header{
+    height: 321px;
+    background-image: url("https://khsmusicweb.blob.core.windows.net/public/src/static/images/bg2/42.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index:1;
+    
+    &::before{
+        content: "";
+        background: linear-gradient(0deg,transparent 0,#000 100%);//漸層.線性
+        width:100%;
+        height:50%;
+        opacity: 0.55;
+        //寬高會滿版
+        display: block;
+        position:absolute;
+        //before.after為行內元素要改成塊及元素
+        //定位absolute跳出結構
+        z-index:-1;
+         //父層設z-index:1 子層設z-index:-1才可以使背景覆蓋上遮罩且文字不被遮住
+        }
+
+    &::after{
+        content: "";
+        background-color: rgba(0,0,0,.3);
+        width:100%;
+        height:100%;
+        display: block;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:-2;
+        //z-index不可設0，不然會使文字無法拖曳
+    }    
+}

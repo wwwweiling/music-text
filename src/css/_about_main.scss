@@ -1,0 +1,82 @@
+@import "_var";
+
+.main_inner{
+
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .main_left{
+
+        .main_left_item{
+
+
+            margin-top: 120px;
+
+            li{
+                margin: 0 50px;
+                padding-bottom: 10px;
+            }
+
+            li>a{
+                font-size:1.15em ;
+                list-style: circle;
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                text-decoration: none;
+                color:black;
+            }
+            li>a::before{
+                content: "";
+                width:6px;
+                height:6px;
+                border-radius:5px;
+                background-color: $color1;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 5px;
+
+            }
+        }
+    }
+    .main_right{
+        position: relative;
+        .white{
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 533 182'%3E%3Cstyle%3E.st0%7Bfill:%23fff%7D%3C/style%3E%3Cpath class='st0' d='M533 60.6s-87.5.3-156-32.5C317.5-.2 280 0 267 0s-50.5-.2-110 28.2C88.5 60.9 1 60.6 1 60.6h-454V182H987V60.6H533z'/%3E%3C/svg%3E");
+            width:100%;
+            height:180px;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 50%;
+            bottom: 105px;
+            z-index:1;
+        }
+
+        .about_menu{
+            display: flex;
+            justify-items: center;
+            .a_menu_child{
+                margin: 0 10px;
+                border-radius: 100%;
+                width:160px;
+                height:160px;
+                background-color: $color1;
+                z-index:2;
+
+                a{
+                    display: block;
+                    font-size: 20px;
+                    color:$color4;
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+
+
+
+}
