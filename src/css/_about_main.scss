@@ -78,6 +78,10 @@
                     background-color: $color4;
                     box-shadow: 2px 3px 3px #888888;
                 }
+                &.other:hover{
+                    background-color: $color1;
+
+                }
                 a{
                     display: block;
                     font-size: 25px;
@@ -89,8 +93,9 @@
             }
             .other>a{
                 color:$color1;
-
             }
+            .other>a:hover
+            {color:$color4;}
         }
     }
 
