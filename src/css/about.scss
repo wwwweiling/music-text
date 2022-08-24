@@ -37,3 +37,10 @@
         //z-index不可設0，不然會使文字無法拖曳
     }    
 }
+
+@media  (max-width:992px) {
+    #about_header{
+        background-size: cover;
+        background-position: 50%;
+        }
+}
