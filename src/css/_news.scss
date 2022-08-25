@@ -14,7 +14,21 @@
     //   width:calc(100% / 3 - 13.5px);//gap影響-所使破版+因此要使用calc
       width:calc(25% - 20px);
       margin: 0 10px;
-      
+      .news_img_parent{
+        position: relative;
+        padding-top: 66.6%;//在這邊調整比例 3:2 原本高度寫死後改成流動性
+      }
+      .news_img_wrap{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+  
+      .news_img{
+          height: 100%;
+      }
     
       .news_img{
         width: 100%;
