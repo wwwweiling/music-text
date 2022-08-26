@@ -11,10 +11,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <script src="js/wow.js"></script>
-    <script>
-    new WOW().init();
-    </script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+
+
 
 </head>
 <body>
@@ -35,7 +35,7 @@
             <p class="wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">功學社取自「貢獻」、「學校」、「社會」，我們希望用優質的樂器與熱誠的音樂教育，將藝術的種子散布在台灣各處，同時走向國際名揚台灣精神。</p>
             <a href="#" class="wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">關於我們</a>
           </div>
-          <a id="go_down" class="go_down" href="#">down</a>  
+          <a id="go_down" onclick="go_down()" class="go_down" href="#">down</a>  
     </header>
     <div class="main" >
       <div class="service">
@@ -59,7 +59,12 @@
               @@for (var i = 0; i < 10; i++) {
                   @@include("include/news_col.html", {
                   "ima":"https://picsum.photos/600/200?random=`+i+` ",
-                  "name" : "薩克斯風分享會～教會朋友不孤單！"})}
+                  "name" : "薩克斯風分享會～教會朋友不孤單！",
+                  "wow" : "fadeIn",
+                  "delay" : "0.`+(i)+`s",
+                  "duration" : "1s"
+                })
+              }
               
           </div>
           <div class="news_block">
@@ -72,17 +77,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!--網頁元素就緒以後即執行-->
-    <script>
-    $(document).ready(function(){
-      $('.header_slider').slick({
-        arrows : false,
-        dots: true,
-        // infinite: true,
-        // waitForAnimate : true,
-        fade: true,
-        speed:300,
-      });
-      })
-    </script>  
+
+      <script>
+      new WOW().init();
+      </script>
+
 </body>
 </html>

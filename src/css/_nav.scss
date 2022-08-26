@@ -12,6 +12,7 @@
    background-size: contain;
    background-position: 50%;
    background-repeat: no-repeat;
+
  }
  .nav_left{
    >li{
@@ -192,3 +193,15 @@ display: none;
   
   
 
+.fixed{
+  background-color: gray;
+  position: fixed;
+  width:100%;
+  z-index: 9999;
+}
+
+// .logo{
+//   background-image: url(../img/LOGO3.svg);
+//   width: 100x;
+//   height: 50px;
+// }
