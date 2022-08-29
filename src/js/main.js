@@ -1,7 +1,7 @@
 function go_down(){
-    let scroll_y =document.querySelector(".card_wrap").getBoundingClientRect().y
+    let scroll_y =document.querySelector(".card").getBoundingClientRect().y
     window.scrollBy({ 
-    top:scroll_y,
+    bottom:scroll_y,
     left: 0,
     behavior: 'smooth'});
   }
