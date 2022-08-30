@@ -1,11 +1,14 @@
+
+//方法一
 function go_down(){
     let scroll_y =document.querySelector(".card").getBoundingClientRect().y
     window.scrollBy({ 
-    bottom:scroll_y,
+    top: scroll_y,
     left: 0,
     behavior: 'smooth'});
   }
-
+  
+//方法二
 
 
 //   document.addEventListener("scroll",function(event){
